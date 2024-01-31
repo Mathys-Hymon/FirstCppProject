@@ -19,16 +19,16 @@ Pokemon tortank{ "tortank", "big pokemon", 50, 10 };
 
 int main()
 {
-    int money = 0;
-    int* bankAccount = &money;
+    string pokemonName;
+    string pokemonDesc;
+    float pokemonLife;
+    float pokemonDamage;
 
-    cout << "The value " << money << " is stored in " << &money << endl;
-    int earnmoney;
-    cout << "how many do you earn ?" << endl;
-    cin >> earnmoney;
-    EarMoneyByPointer(bankAccount,earnmoney);
-    EarMoneyByRef(money, earnmoney);
+        cout << "what is the name of your pokemon ?";
+        cin >> pokemonName;
+        cout << "what is the description of " << pokemonName;
+        cin >> pokemonDesc;
+        cout << "how many life points ?";
 
-
-    cout << "okay, I added " << earnmoney << " to your wallet, now you have " << money << endl;
+        Pokemon pokemonName{pokemonName, pokemonDesc, pokemonLife, pokemonDamage}
 }
