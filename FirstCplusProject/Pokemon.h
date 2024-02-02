@@ -16,11 +16,10 @@ private :
 	 public :
 
 		 Pokemon(string name, string description, float life, float attackDamage);
-		 void Attack(Pokemon ennemy,int damages);
+		 void Attack(Pokemon ennemy);
 		 void Damaged(float damages);
 		 void FlipflopPokeball();
 		 void Die();
 		 void Heal(float healAmount);
-
 };
 

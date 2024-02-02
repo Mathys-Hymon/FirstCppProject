@@ -18,12 +18,15 @@
     <ClCompile Include="FirstCplusProject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Pokemon.cpp">
+    <ClCompile Include="Trainer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Pokemon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Trainer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -3,32 +3,26 @@
 #include "Pokemon.h"
 using namespace std;
 
-void EarMoneyByRef(int&  wallet, int wage) {
-    wallet += wage;
-    if (wage >= 0) {
-        wallet -= wage / 4;
-    }
-}
-void EarMoneyByPointer(int* wallet, int wage) {
-    wallet += wage;
-    if (wage >= 0) {
-        wallet -= wage / 4;
-    }
-}
+
 Pokemon tortank{ "tortank", "big pokemon", 50, 10 };
 
 int main()
 {
     string pokemonName;
     string pokemonDesc;
-    float pokemonLife;
-    float pokemonDamage;
+    float pokemonLife = 0;
+    float pokemonDamage = 0;
 
-        cout << "what is the name of your pokemon ?";
+        cout << "what is the name of your pokemon ?" << endl;
         cin >> pokemonName;
-        cout << "what is the description of " << pokemonName;
+        cout << "what is the description of " << pokemonName << endl;
         cin >> pokemonDesc;
-        cout << "how many life points ?";
+        cout << "how many life points ?" << endl;
+        cin >> pokemonLife;
+        cout << "how many attack points ?" << endl;
+        cin >> pokemonDamage;
 
-        Pokemon pokemonName{pokemonName, pokemonDesc, pokemonLife, pokemonDamage}
+        Pokemon tortank{ pokemonName, pokemonDesc, pokemonLife, pokemonDamage };
+
+
 }
